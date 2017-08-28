@@ -5,6 +5,9 @@ import { TemplateVisTypeProvider } from 'ui/template_vis_type/template_vis_type'
 // must be AMD modules (RequireJS)
 define(function(require) {
 
+	// Include our custom CSS (LESS also works)
+	require('plugins/tr-k4p-clock/clock.css');
+
 	// The provider function must return the visualization
 	function ClockProvider(Private) {
 		// Load TemplateVisType
